@@ -3,3 +3,34 @@
    padding: 0;
    box-sizing: border-box;
 }
+.container{
+   max-width: 1200px;
+   margin: auto;
+}
+header{
+   padding: 20px 0;
+   background-color: black;
+   border-radius: 35px;
+   width: 90%;
+   margin: auto;
+   margin-top: 50px;
+}
+.heading{
+   display: flex;
+   align-items: center;
+}
+header ul{
+   list-style: none;
+   display: flex;
+   justify-content: flex-end;
+}
+
+header ul li a{
+   margin-left: 100px;
+   letter-spacing: 2.5px;
+   font-size: x-large;
+   color: rgb(46, 177, 133);
+   text-decoration: none;
+}
+
+

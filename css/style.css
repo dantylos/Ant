@@ -62,27 +62,42 @@ header ul li a{
 }
 .ant a{
    font-family: monospace;
-   font-size: 26px;
+   font-size: 16px;
    background: rgb(209, 59, 192);
    text-decoration: none;
    border-radius: 10px;
-   padding: 10px 12px;
+   padding: 7px 10px;
+   color: black;
+}
+.ant a:hover{
+   text-decoration: underline;
 }
 .ant img{
    margin-left: 90px;
 }
+\\ reg_form
+.reg{
+   padding: 75px 0;
+}
+.registration{
+   display: flex;
+   justify-content: center;
+}
+.subm_from{
+   padding: 5px 8px;
+   background: rgb(193, 222, 193);
+   border: solid 1px black;
+}
+
+\\ footer 
+
 footer{
-   margin-bottom: 50px;
-   border-radius: 35px;
    padding: 20px 0;
-   margin: auto;
-   max-width: 90%;
    display: flex;
    justify-content: center;
    background: rgb(159,155,38);
    background: linear-gradient(230deg, rgba(159,155,38,0.860921736858806) 0%, rgba(175,173,104,1) 0%, rgba(25,199,125,1) 41%, rgba(21,92,171,1) 100%, rgba(189,185,136,0.9757676752341562) 100%, rgba(106,106,106,0.8385127732733718) 100%);
 }
-
 footer ul{
    display: flex;
    list-style: none;

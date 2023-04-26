@@ -11,6 +11,9 @@ body{
    max-width: 1200px;
    margin: auto;
 }
+
+/*Header*/
+
 header{
    padding: 20px 0;
    border-radius: 35px;
@@ -38,6 +41,9 @@ header ul li a{
    color: rgb(46, 177, 133);
    text-decoration: none;
 }
+
+/*main-wrapper*/
+
 .main-banner{
    padding: 120px 35px 100px 20px;
 }
@@ -75,19 +81,24 @@ header ul li a{
 .ant img{
    margin-left: 90px;
 }
-\\ reg_form
+
+/*Register*/
+
 .reg{
    padding: 75px 0;
 }
 .registration{
    display: flex;
    justify-content: center;
+   
 }
 .subm_from{
    padding: 5px 8px;
    background: rgb(193, 222, 193);
    border: solid 1px black;
 }
+
+/*Footer*/
 
 footer{
    padding: 20px 0;

@@ -90,12 +90,40 @@ header ul li a{
 .registration{
    display: flex;
    justify-content: center;
-   
+
 }
 .subm_from{
-   padding: 5px 8px;
+   padding: 7px 15px;
    background: rgb(193, 222, 193);
    border: solid 1px black;
+   font-size: small;
+   border-radius: 10px;
+}
+.inp input{
+   background: rgb(131,58,180);
+   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(40,207,168,1) 31%, rgba(29,253,118,1) 50%, rgba(56,248,252,1) 84%, rgba(252,176,69,1) 100%);
+   width: 500px;
+   max-height: 85px;
+   padding: 10px 0 10px 25px;
+   font-size: medium;
+}
+.gen input{
+   margin-left: 20px;
+}
+.radio{
+   padding: 20px 0;
+}
+#buton{
+   display: block;
+   margin-bottom: 20px;
+}
+.inp input::placeholder{
+   color: black;
+}
+.but{
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
 }
 
 /*Footer*/
@@ -106,6 +134,7 @@ footer{
    justify-content: center;
    background: rgb(159,155,38);
    background: linear-gradient(230deg, rgba(159,155,38,0.860921736858806) 0%, rgba(151,149,66,1) 0%, rgba(25,199,125,1) 0%, rgba(22,119,160,1) 87%, rgba(106,106,106,1) 100%, rgba(21,92,171,1) 100%, rgba(189,185,136,0.9757676752341562) 100%);
+   width: 100%;
 }
 footer ul{
    display: flex;
@@ -117,6 +146,4 @@ footer ul li{
 footer ul li:first-of-type{
    margin-left: 0;
 }
-
-
 

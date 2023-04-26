@@ -89,14 +89,12 @@ header ul li a{
    border: solid 1px black;
 }
 
-\\ footer 
-
 footer{
    padding: 20px 0;
    display: flex;
    justify-content: center;
    background: rgb(159,155,38);
-   background: linear-gradient(230deg, rgba(159,155,38,0.860921736858806) 0%, rgba(175,173,104,1) 0%, rgba(25,199,125,1) 41%, rgba(21,92,171,1) 100%, rgba(189,185,136,0.9757676752341562) 100%, rgba(106,106,106,0.8385127732733718) 100%);
+   background: linear-gradient(230deg, rgba(159,155,38,0.860921736858806) 0%, rgba(151,149,66,1) 0%, rgba(25,199,125,1) 0%, rgba(22,119,160,1) 87%, rgba(106,106,106,1) 100%, rgba(21,92,171,1) 100%, rgba(189,185,136,0.9757676752341562) 100%);
 }
 footer ul{
    display: flex;

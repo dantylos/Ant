@@ -1,3 +1,92 @@
+@font-face {
+  font-family: 'sinkin_sans200';
+  src: url('sinkinsans-200xlight-webfont.eot');
+  src: url('sinkinsans-200xlight-webfont.eot?#iefix') format('embedded-opentype'),
+       url('sinkinsans-200xlight-webfont.woff2') format('woff2'),
+       url('sinkinsans-200xlight-webfont.woff') format('woff'),
+       url('sinkinsans-200xlight-webfont.ttf') format('truetype'),
+       url('sinkinsans-200xlight-webfont.svg#sinkin_sans200_x_light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans300';
+  src: url('../fonts/sinkinsans-300light-webfont.eot');
+  src: url('../fonts/sinkinsans-300light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-300light-webfont.woff2') format('woff2'),
+       url('../fonts/sinkinsans-300light-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-300light-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-300light-webfont.svg#sinkin_sans300_light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans400';
+  src: url('../fonts/sinkinsans-400regular-webfont.eot');
+  src: url('../fonts/sinkinsans-400regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-400regular-webfont.woff2') format('woff2'),
+       url('../fonts/inkinsans-400regular-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-400regular-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-400regular-webfont.svg#sinkin_sans400_regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans500';
+  src: url('../fonts/sinkinsans-500medium-webfont.eot');
+  src: url('../fonts/sinkinsans-500medium-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-500medium-webfont.woff2') format('woff2'),
+       url('../fonts/sinkinsans-500medium-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-500medium-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-500medium-webfont.svg#sinkin_sans500_medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans600';
+  src: url('../fonts/sinkinsans-600semibold-webfont.eot');
+  src: url('../fonts/sinkinsans-600semibold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-600semibold-webfont.woff2') format('woff2'),
+       url('../fonts/sinkinsans-600semibold-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-600semibold-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-600semibold-webfont.svg#sinkin_sans600_semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans700';
+  src: url('../fonts/sinkinsans-700bold-webfont.eot');
+  src: url('../fonts/sinkinsans-700bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-700bold-webfont.woff2') format('woff2'),
+       url('../fonts/sinkinsans-700bold-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-700bold-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-700bold-webfont.svg#sinkin_sans700_bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans800';
+  src: url('../fonts/sinkinsans-800black-webfont.eot');
+  src: url('../fonts/sinkinsans-800black-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-800black-webfont.woff2') format('woff2'),
+       url('../fonts/sinkinsans-800black-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-800black-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-800black-webfont.svg#sinkin_sans800_black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sinkin_sans900';
+  src: url('../fonts/sinkinsans-900xblack-webfont.eot');
+  src: url('../fonts/sinkinsans-900xblack-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sinkinsans-900xblack-webfont.woff2') format('woff2'),
+       url('../fonts/sinkinsans-900xblack-webfont.woff') format('woff'),
+       url('../fonts/sinkinsans-900xblack-webfont.ttf') format('truetype'),
+       url('../fonts/sinkinsans-900xblack-webfont.svg#sinkin_sans900_x_black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
    margin: 0;
    padding: 0;
@@ -10,6 +99,9 @@ body{
 .container{
    max-width: 1200px;
    margin: auto;
+}
+.flex{
+  display: flex;
 }
 
 /*Header*/
@@ -32,14 +124,23 @@ header ul{
    list-style: none;
    display: flex;
 }
-header ul li{
+header nav ul li{
    margin-left: 80px;
+   font-size: 24px;
+   transition: 0.5s;
+   font-family: 'Roboto', sans-serif;
+   font-size: 25px;
+}
+header nav ul li:hover{
+  transform: scale(1.2);
+  text-decoration: underline;
+  text-decoration-color: aqua;
 }
 header ul li a{
    letter-spacing: 2.5px;
-   font-size: x-large;
    color: rgb(46, 177, 133);
    text-decoration: none;
+   display: inline-block;
 }
 
 /*main-wrapper*/
@@ -57,23 +158,26 @@ header ul li a{
    font-family: monospace;
    font-size: 40px;
    margin-bottom: 15px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 50px;
 }
 .ant p{
    letter-spacing: 1.8px;
    word-spacing: 13px;
-   font-family: monospace;
-   font-size: 22px;
    margin-bottom: 30px;
    max-width: 650px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 20px;
 }
 .ant a{
-   font-family: monospace;
-   font-size: 16px;
+   font-size: 18px;
    background: rgb(209, 59, 192);
    text-decoration: none;
    border-radius: 10px;
    padding: 7px 10px;
    color: black;
+   display: inline-block;
+   font-family: 'Roboto', sans-serif;
 }
 .ant a:hover{
    text-decoration: underline;
@@ -96,7 +200,7 @@ header ul li a{
    padding: 7px 15px;
    background: rgb(193, 222, 193);
    border: solid 1px black;
-   font-size: small;
+   font-family: 'Roboto', sans-serif;
    border-radius: 10px;
 }
 .inp input{
@@ -105,7 +209,7 @@ header ul li a{
    width: 500px;
    max-height: 85px;
    padding: 10px 0 10px 25px;
-   font-size: medium;
+   font-family: 'Roboto', sans-serif;
 }
 .gen input{
    margin-left: 20px;
@@ -124,6 +228,183 @@ header ul li a{
    margin-top: 20px;
    display: flex;
    justify-content: center;
+}
+.boxes{
+  padding: 30px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.bloks{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box_margin{
+  margin-left: 50px;
+}
+.blok1{
+  width: 450px;
+}
+.blok2{
+  width: 450px;
+}
+.box1{
+  width: 450px;
+  height: 425px;
+  border: solid 2px aqua;
+  border-radius: 30px;
+  background-color: purple;
+  margin-bottom: 50px;
+  padding: 15px;
+}
+.box2{
+  width: 450px;
+  height: 900px;
+  border: solid 2px aqua;
+  border-radius: 30px;
+  background-color: purple;
+  margin-bottom: 50px;
+}
+.one_box p{
+  margin: 15px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.one_box img{
+  max-width: 300px;
+}
+.one_box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  padding: 15px 0;
+}
+.wrapper .container{
+  max-width: 900px;
+}
+.wrapper h4{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.wrapper p{
+  margin-top: 17px;
+}
+.year{
+  padding: 5px 10px;
+  background: #142850;
+  border-radius: 16px;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+.next_cont{
+  margin-left: 10px;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+.flex_b{
+  display: flex;
+  border-bottom: solid 1px gray;
+  margin-top: 30px;
+}
+.flex_b img{
+  margin-bottom: 15px;
+}
+.cont{
+  margin-left: 10px;
+}
+
+.wrap{
+  padding: 10px 0 30px 0;
+  background: #afe5f6;
+}
+.wrap .container{
+  max-width: 900px;
+}
+.wrap h5{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+.wrap h3{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+  color: #21243D;
+  margin-bottom: 20px;
+}
+.wrap p{
+  margin-top: 20px;
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+}
+.wrap a{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00A8CC;
+}
+.date{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+}
+.text{
+  font-family: 'Heebo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+  margin-left: 15px;
+}
+.right_border{
+  border-left: solid 1px rgb(154, 153, 153);
+  margin-left: 15px;
+}
+.head_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.system_box{
+  display: flex;
+}
+.system_block{
+  max-width: 440px;
+  background: #FFFFFF;
+  padding: 24px 22px;
+}
+.system_block:last-of-type{
+  margin-left: 20px;
 }
 
 /*Footer*/
@@ -146,4 +427,11 @@ footer ul li{
 footer ul li:first-of-type{
    margin-left: 0;
 }
-
+.foot_text{
+  text-align: center;
+  margin-top: 25px;
+}
+.foot_text p{
+  font-family: 'Roboto', sans-serif;
+  color: darkslategrey;
+}
